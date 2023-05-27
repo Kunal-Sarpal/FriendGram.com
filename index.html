@@ -17,6 +17,95 @@
     </head>
     <style>
         
+        .reviews{
+            
+            background-color:#cececece;
+            border: 3px solid white;
+            /* justify-content: center; */
+        }
+        .comment-section {
+            margin-bottom: 20px;
+        }
+
+        /* Style for the comment section container */
+        .comment-section {
+            background-color: #f9f9f9;
+
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+
+
+        /* Style for the comment section heading */
+        .comment-section h3 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        /* Style for the comment form */
+        .comment-form {
+            margin-bottom: 20px;
+        }
+
+        .comment-form .comment-input {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: vertical;
+        }
+
+        .comment-form .submit-comment {
+            background-color: #9340FF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .comment-form .submit-comment:hover {
+            background-color: #290855;
+        }
+
+        /* Style for the comment list */
+        .comment-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        /* Style for individual comments */
+        .comment-list li {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .comment-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .comment-form textarea {
+            width: 100%;
+            height: 80px;
+            resize: vertical;
+        }
+
+        .comment-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
 
         .boxee {
             width: 300px;
@@ -44,6 +133,10 @@
             /* set the image to cover the entire container */
         }
 
+        .comment-list {
+            border: 2px solid white;
+        }
+
         .color {
             background-color: #101728;
         }
@@ -60,8 +153,79 @@
             /* border: 3px solid red; */
             display: flex;
             justify-content: center;
-            background-color: #120707a4;
+            /* background-color: #120707a4; */
+background-color:#cececece;
+        }
 
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .reviews {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .reviews h1,
+        .reviews h2 {
+            text-align: center;
+        }
+body{
+    background-color: #cececece;
+}
+        .review-form {
+            margin-bottom: 20px;
+        }
+
+        .review-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .review-form input[type="text"],
+        .review-form textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .review-form button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #9340FF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .review-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .review {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .reviews {
+                padding: 10px;
+            }
+
+            .review-form input[type="text"],
+            .review-form textarea,
+            .review-form button {
+                font-size: 14px;
+            }
         }
 
         .para-in-img {
@@ -84,8 +248,23 @@
             word-spacing: 5xp;
             scrollbar-shadow-color: aqua;
             scroll-behavior: smooth;
+            background-color: #f9f9f9;
 
 
+
+        }
+
+        ul {
+            color: #9340FF;
+            /* background-color:#9340FF; */
+        }
+
+        .logoo {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            margin-left: 75%;
+            overflow: hidden;
 
         }
 
@@ -93,22 +272,25 @@
             opacity: 0.9;
 
         }
-        .hema,#hi{
+
+        .hema,
+        #hi {
             width: 50px;
             height: 50px;
-          
+
 
         }
-        .hema{
-            position:fixed;
+
+        .hema {
+            position: fixed;
             width: 100%;
             height: 100%;
             background-size: cover;
         }
-        #hi:focus{
-            background-color:black;
-        }
 
+        #hi:focus {
+            background-color: black;
+        }
     </style>
 
 <body>
@@ -116,9 +298,12 @@
 
 
         <div class="topnav" id="myTopnav">
+
+
             <a href="#home" class="active">Home</a>
             <a href="#news">News</a>
             <a href="#contact">Contact</a>
+
             <div class="dropdown">
                 <button class="dropbtn">Dropdown
                     <i class="fa fa-caret-down"></i>
@@ -127,12 +312,13 @@
                     <a href="#">Link 1</a>
                     <a href="#">Link 2</a>
                     <a href="#">Link 3</a>
+
                 </div>
             </div>
             <a href="#about">About</a>
             <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
-
+        <img class="logoo" src="logoo.jpg" alt="">
         <!-- Image HOME -->
         <div class="image-container">
 
@@ -162,70 +348,148 @@
         <!-- <img class = "Marqueimg"src="flop.jpg" alt="Image 5"> -->
     </div>
 
-
     <div class="flex">
-        <div class="img-para">
-            <div class="boxee"><img class="imgset
-            " src="kunal.jpg" alt=""></div>
-         
-            <div class="para-in-img"> <button onclick="functio()" id="hi">8<img class="hema"src="heart.png" alt=""></button>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptas cupiditate
-                mollitia, odit saepe id maxime tempora repudiandae atque, perspiciatis praesentium aliquam. Laboriosam
-                aliquam corporis excepturi minima nihil, nam iure.</div>   
 
-        </div>
         <div class="img-para">
             <div class="boxee"><img class="imgset
                 
-            " src="om.jpg" alt="" ></div>
-            
-            <div class="para-in-img">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptas cupiditate
-                mollitia, odit saepe id maxime tempora repudiandae atque, perspiciatis praesentium aliquam. Laboriosam
-                aliquam corporis excepturi minima nihil, nam iure.</div>    
+            " src="kunal.jpg" alt=""></div>
 
+            <div class="para-in-img">
+
+                <!--  -->
+                <div id="comment-section-2" class="comment-section">
+                    <h3>Comment Section 2</h3>
+                    <form class="comment-form">
+                        <textarea class="comment-input" placeholder="Write your comment"></textarea>
+                        <button class="submit-comment" data-comment-section="comment-section-2">Submit</button>
+                    </form>
+                    <ul class="comment-list"></ul>
+                </div>
+            </div>
         </div>
+
         <div class="img-para">
             <div class="boxee"><img class="imgset
-            " src="jowan.jpg" alt=""></div>
-            <div class="para-in-img">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptas cupiditate
-                mollitia, odit saepe id maxime tempora repudiandae atque, perspiciatis praesentium aliquam. Laboriosam
-                aliquam corporis excepturi minima nihil, nam iure.</div>   
+                
+            " src="om.jpg" alt=""></div>
 
+            <div class="para-in-img">
+
+                <!--  -->
+                <div id="comment-section-2" class="comment-section">
+                    <h3>Comment Section 2</h3>
+                    <form class="comment-form">
+                        <textarea class="comment-input" placeholder="Write your comment"></textarea>
+                        <button class="submit-comment" data-comment-section="comment-section-2">Submit</button>
+                    </form>
+                    <ul class="comment-list"></ul>
+                </div>
+            </div>
         </div>
-        <div class="img-para">
-            <div class="boxee"><img class="imgset
+
+    
+    <div class="img-para">
+        <div class="boxee"><img class="imgset
+            " src="jowan.jpg" alt="">
+        </div>
+        <div class="para-in-img">
+
+            <!--  -->
+            <div id="comment-section-3" class="comment-section">
+                <h3>Comment Section 3</h3>
+                <form class="comment-form">
+                    <textarea class="comment-input" placeholder="Write your comment"></textarea>
+                    <button class="submit-comment" data-comment-section="comment-section-3">Submit</button>
+                </form>
+                <ul class="comment-list"></ul>
+            </div>
+        </div>
+    </div>
+
+  
+    <div class="img-para">
+        <div class="boxee"><img class="imgset
             " src="WhatsApp Image 2023-05-27 at 10.03.03.jpg" alt=""></div>
-            <div class="para-in-img">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptas cupiditate
-                mollitia, odit saepe id maxime tempora repudiandae atque, perspiciatis praesentium aliquam. Laboriosam
-                aliquam corporis excepturi minima nihil, nam iure.</div> 
+        <div class="para-in-img">
+
+            <!--  -->
+            <div id="comment-section-4" class="comment-section">
+                <h3>Comment Section 4</h3>
+                <form class="comment-form">
+                    <textarea class="comment-input" placeholder="Write your comment"></textarea>
+                    <button class="submit-comment" data-comment-section="comment-section-4">Submit</button>
+                </form>
+                <ul class="comment-list"></ul>
+            </div>
 
         </div>
-        <div class="img-para">
-            <div class="boxee"><img class="imgset
+    </div>
+
+    
+    <div class="img-para">
+        <div class="boxee"><img class="imgset
             " src="what.jpg" alt=""></div>
-            <div class="para-in-img">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptas cupiditate
-                mollitia, odit saepe id maxime tempora repudiandae atque, perspiciatis praesentium aliquam. Laboriosam
-                aliquam corporis excepturi minima nihil, nam iure.</div>  
-
+        <div class="para-in-img">
+            <!--  -->
+            <div id="comment-section-5" class="comment-section">
+                <h3>Comment Section 5</h3>
+                <form class="comment-form">
+                    <textarea class="comment-input" placeholder="Write your comment"></textarea>
+                    <button class="submit-comment" data-comment-section="comment-section-5">Submit</button>
+                </form>
+                <ul class="comment-list"></ul>
+            </div>
         </div>
-        <div class="img-para">
-            <div class="boxee"><img class="imgset
+    </div>
+
+   
+    <div class="img-para">
+        <div class="boxee"><img class="imgset
             " src="happy.jpg" alt=""></div>
-            <div class="para-in-img">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptas cupiditate
-                mollitia, odit saepe id maxime tempora repudiandae atque, perspiciatis praesentium aliquam. Laboriosam
-                aliquam corporis excepturi minima nihil, nam iure.</div>  
+        <div class="para-in-img">
+
+            <!--  -->
+            <div id="comment-section-6" class="comment-section">
+                <h3>Comment Section 6</h3>
+                <form class="comment-form">
+                    <textarea class="comment-input" placeholder="Write your comment"></textarea>
+                    <button class="submit-comment" data-comment-section="comment-section-6">Submit</button>
+                </form>
+                <ul class="comment-list"></ul>
+            </div>
 
         </div>
+    </div>
+
+    
 
 
     </div>
 
-    <footer>
-        <div class="box">CREATER</div>
-        <div class="block11">
-            <div class="block">
-                <div class="animated-heading">Kunal_Creation</div>
+   
 
-            </div>
+    <footer class="reviews">
+        <form action=""></form>
+        <h1>Customer Reviews</h1>
+        <br>
+
+        <div class="review-form">
+            <br>
+            <label for="name">Your Name:</label>
+
+            <input type="text" id="name" required>
+            <br>
+
+            <label for="review">Your Review:</label>
+            <textarea id="review" required></textarea>
+            <br>
+            <button id="submit-review">Submit Review</button>
+        </div>
+
+        <h2>Reviews:</h2>
+        <ul id="review-list" class="review-list"></ul>
+        </form>
     </footer>
 
 
@@ -248,6 +512,155 @@
             document.getElementById('hi').innerHTML = sum;
             localStorage.setItem('num', sum);
         }
+
+    </script>
+
+
+
+    <script>
+
+    </script>
+
+
+
+
+    <script>
+        // Function to create a new review item
+        function createReviewItem(name, review) {
+            const listItem = document.createElement('li');
+            listItem.className = 'review';
+            listItem.innerHTML = `<strong>${name}</strong>: ${review}`;
+            return listItem;
+        }
+
+        // Event listener for the submit button
+        const submitButton = document.getElementById('submit-review');
+        submitButton.addEventListener('click', function (event) {
+            event.preventDefault();
+
+            // Get the input values
+            const nameInput = document.getElementById('name');
+            const reviewInput = document.getElementById('review');
+            const name = nameInput.value.trim();
+            const review = reviewInput.value.trim();
+
+            if (name === '' || review === '') {
+                return; // Don't submit if fields are empty
+            }
+
+            // Create the new review item
+            const reviewList = document.getElementById('review-list');
+            const newReview = createReviewItem(name, review);
+            reviewList.appendChild(newReview);
+
+            // Clear the input fields
+            nameInput.value = '';
+            reviewInput.value = '';
+
+            // Save the review data to localStorage
+            const reviews = JSON.parse(localStorage.getItem('reviews')) || [];
+            reviews.push({ name, review });
+            localStorage.setItem('reviews', JSON.stringify(reviews));
+        });
+
+        // Function to retrieve reviews from localStorage
+        function getReviews() {
+            const reviews = JSON.parse(localStorage.getItem('reviews')) || [];
+            const reviewList = document.getElementById('review-list');
+            reviews.forEach(function (review) {
+                const newReview = createReviewItem(review.name, review.review);
+                reviewList.appendChild(newReview);
+            });
+        }
+
+        // Call the getReviews function to retrieve and display existing reviews
+        getReviews();
+
+    </script>
+    <script>
+        // Function to store comments in local storage
+        function storeComments(commentSectionId) {
+            // Get the comment section element
+            const commentSection = document.getElementById(commentSectionId);
+
+            // Get the comment input element
+            const commentInput = commentSection.querySelector('.comment-input');
+
+            // Get the comment list element
+            const commentList = commentSection.querySelector('.comment-list');
+
+            // Get the existing comments from local storage (if any)
+            const existingComments = JSON.parse(localStorage.getItem('comments')) || {};
+
+            // Get the new comment value from the input field
+            const newComment = commentInput.value.trim();
+
+            if (newComment === '') {
+                return; // Don't store empty comments
+            }
+
+            // Add the new comment to the existing comments for the specific comment section
+            if (!existingComments[commentSectionId]) {
+                existingComments[commentSectionId] = [];
+            }
+            existingComments[commentSectionId].push(newComment);
+
+            // Save the updated comments to local storage
+            localStorage.setItem('comments', JSON.stringify(existingComments));
+
+            // Clear the comment input field
+            commentInput.value = '';
+
+            // Update the comment list
+            updateCommentList(commentList, existingComments[commentSectionId]);
+        }
+
+        // Function to update the comment list with stored comments
+        function updateCommentList(commentList, comments) {
+            // Clear the comment list
+            commentList.innerHTML = '';
+
+            // Create and append new list items for each comment
+            comments.forEach(comment => {
+                const listItem = document.createElement('li');
+                listItem.textContent = comment;
+                commentList.appendChild(listItem);
+            });
+        }
+
+        // Function to retrieve and display comments from local storage
+        function retrieveComments(commentSectionId) {
+            // Get the comment section element
+            const commentSection = document.getElementById(commentSectionId);
+
+            // Get the comment list element
+            const commentList = commentSection.querySelector('.comment-list');
+
+            // Get the existing comments from local storage (if any)
+            const existingComments = JSON.parse(localStorage.getItem('comments')) || {};
+
+            // Update the comment list with the stored comments for the specific comment section
+            if (existingComments[commentSectionId]) {
+                updateCommentList(commentList, existingComments[commentSectionId]);
+            }
+        }
+
+        // Event listener for the submit button
+        const submitButtons = document.querySelectorAll('.submit-comment');
+        submitButtons.forEach(submitButton => {
+            submitButton.addEventListener('click', function (event) {
+                event.preventDefault();
+                const commentSectionId = this.getAttribute('data-comment-section');
+                storeComments(commentSectionId);
+            });
+        });
+
+        // Retrieve and display comments for each comment section
+        const commentSections = document.querySelectorAll('.comment-section');
+        commentSections.forEach(commentSection => {
+            const commentSectionId = commentSection.getAttribute('id');
+            retrieveComments(commentSectionId);
+        });
 
     </script>
 </body>
