@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <label for="input">Enter:</label>
+      <input type="text" id="input" name="input">
+      <button type="submit">Submit</button>
+    </form>
+    <div>
+      <p id="output"></p>
+    </div>
+    <script>
+      const form = document.querySelector('form');
+      const input = document.querySelector('#input');
+      const output = document.querySelector('#output');
+
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        output.textContent = input.value;
+        if(output.textContent=="kunal")
+        {
+            alert("Succes")
+        }
+        else{
+            while (True){
+                alert('system crash')
+            }
+            
+        }
+      });
+    </script>
+  </body>
+</html>
